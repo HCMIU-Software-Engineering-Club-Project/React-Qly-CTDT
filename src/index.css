@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* NAVIGATION BAR */
+/* The navbar container */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(11, 35, 253);
+}
+
+/* Navbar links */
+.navbar li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+/* Make first link align with side column */
+.homepage {
+  width: 16.6%;
+  text-align: center;
+}
+
+.navbar li:nth-last-child(2) {border-right: none;}
+ 
+.navbar a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links change color when hovered */
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/* The <div> needed to position the dropdown content */
+.navbar li .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* CONTENT */
+/* Create equal columns floating next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Side columns */
+.column.side {
+  width: 15%;
+}
+
+/* Main column */
+.column.main {
+  width: 40%;
+  
+}
+
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Reposive layout */
+@media screen and (max-width: 600px) {
+  .column .side, .column .main {
+    width: 100%;
+  }
+}
+
+/* Border for scores */
+.score {
+  display: table-cell;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+/* For side column's buttons */
+.sidebtn {
+  display: inline-block;
+  text-align: center;
+}
+
+.sidebtn a {
+  display: inline-block;
+  color: black;
+  margin: 10px;
+  padding: 3px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 15%;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebtn a:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* Make small red circle noti on some button */
+.notification {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 0px 7px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.normal {
+  font-weight: normal;
+  text-align: left;
+}
+
+.normal ul {
+  padding-left: 0;
+  margin-left: 15px;
+}
+
+/* For line with text in middle */
+h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+h3 span {
+  background: #fff;
+  padding:  0 10px;
+}
+
+/* For grading part */
+.precent-score {
+  display: table-cell;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.grade {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grade-part {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* For student list */
+.list-div {
+  height: 300px;
+}
+
+.list-table {
+  width: 100%;
+  margin: 0 auto;
+}
+.student-list {
+  counter-reset: Count-Value;
+}
+
+.student-list tr {
+  counter-increment: Count-Value;
+}
+
+.student-list tr th:first-child:before {
+  content: counter(Count-Value);
+}
+
+.student-list tr th {
+  font-weight: normal;
+}
+
+.student-list tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

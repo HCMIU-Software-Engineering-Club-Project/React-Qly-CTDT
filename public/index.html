@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul >
+            <li class="homepage"><a href="#home">EduBoard</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#G&C">Grade & Curriculum</a></li>
+            <li style="float: right" class="dropdown">
+              <a href="#account" class="dropbtn">ITITIU17067
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">EB Home</a>
+                <a href="#">Post</a>
+                <a href="#">Updates</a>
+                <a href="#">My Grades</a>
+                <a href="#">Calendar</a>
+              </div>
+            </li>
+            <li style="float: right">
+              <a href="#mail">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br>
+
+    <div class="row">
+      <div class="column side">
+        <h2>Data Structures and Algorithms</h2>
+        <figure>
+          <div class="score">75</div>
+          <div>Average Score</div>
+        </figure>
+        <hr>
+        <div class="sidebtn">
+          <a href="#">Details</a>
+          <a href="#">
+            <span>Notification</span>
+            <span class="notification">!</span>
+          </a>
+          <a href="#">Assignment</a>
+          <a href="#">Content</a>
+        </div>
+      </div>
+    
+      <div class="column main" style="border-left: 1px solid black;">
+        <table border="0">
+          <tr>
+            <th>Major</th>
+            <th class="normal">Infomation Technology</th>
+          </tr>
+          <tr>
+            <th>Specialized Major</th>
+            <th class="normal">None</th>
+          </tr>
+          <tr>
+            <th>Course ID</th>
+            <th class="normal">IT131IU</th>
+          </tr>
+          <tr>
+            <th>Credit(s)</th>
+            <th class="normal">4</th>
+          </tr>
+        </table>
+
+        <div>
+          <h3><span>About</span></h3> 
+          <p>Data Structures are the programmatic way of storing data so that data can be used efficiently. Almost every enterprise application uses various types of data structures in one or the other way. This tutorial will give you a great understanding on Data Structures needed to understand the complexity of enterprise level applications and need of algorithms, and data structures.</p>
+        </div>
+
+        <div>
+            <h3><span>Requirements</span></h3> 
+            <table border="0">
+              <tr>
+                <th>Minimum Credit(s)</th>
+                <th class="normal">40</th>
+              </tr>
+              <tr>
+                <th>Prerequisite(s)</th>
+                <th class="normal"><ul>
+                  <li>Object-Oriented Programming</li>
+                  <li>Discrete Mathematics</li>
+                  <li>C/C++ Programming in Unix</li>
+                </ul></th>
+              </tr>
+              <tr>
+                <th>Parallel Course(s)</th>
+                <th class="normal">None</th>
+              </tr>
+            </table>
+        </div>
+      </div>
+
+        <div class="column main">
+          <div>
+            <h3><span>Grading</span></h3> 
+            <div class="grade-part">
+              <div class="grade">
+                <div class="precent-score">100</div>
+                <div>Class<br>(30%)</div>
+              </div>
+              <div class="grade">
+                <div class="precent-score">80</div>
+                <div>Mid<br>(30%)</div>
+              </div>
+              <div class="grade">
+                <div class="precent-score">95</div>
+                <div>Final<br>(40%)</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3><span>Student List</span></h3>
+            <p style="text-align: center"><b>Lecturer</b> Nguyen Thanh Tung</p>
+            <div style="overflow-y: auto" class="list-div">
+              <table class="list-table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Major</th>
+                    <th>Specialized Major</th>
+                  </tr>
+                </thead>
+                <tbody class="student-list">
+                  <tr>
+                    <th></th>
+                    <th>Nguyễn Văn</th>
+                    <th>Anh</th>
+                    <th>IT</th>
+                    <th>DS</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>Barry</th>
+                    <th>Allen</th>
+                    <th>BA</th>
+                    <th>FN</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Nguyễn Văn</th>
+                      <th>Anh</th>
+                      <th>IT</th>
+                      <th>DS</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Barry</th>
+                      <th>Allen</th>
+                      <th>BA</th>
+                      <th>FN</th>
+                  </tr>
+                  <tr>
+                        <th></th>
+                        <th>Nguyễn Văn</th>
+                        <th>Anh</th>
+                        <th>IT</th>
+                        <th>DS</th>
+                  </tr>
+                  <tr>
+                        <th></th>
+                        <th>Barry</th>
+                        <th>Allen</th>
+                        <th>BA</th>
+                        <th>FN</th>
+                  </tr>
+                  <tr>
+                          <th></th>
+                          <th>Nguyễn Văn</th>
+                          <th>Anh</th>
+                          <th>IT</th>
+                          <th>DS</th>
+                  </tr>
+                  <tr>
+                          <th></th>
+                          <th>Barry</th>
+                          <th>Allen</th>
+                          <th>BA</th>
+                          <th>FN</th>
+                  </tr>
+                  <tr>
+                            <th></th>
+                            <th>Nguyễn Văn</th>
+                            <th>Anh</th>
+                            <th>IT</th>
+                            <th>DS</th>
+                  </tr>
+                  <tr>
+                            <th></th>
+                            <th>Barry</th>
+                            <th>Allen</th>
+                            <th>BA</th>
+                            <th>FN</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Nguyễn Văn</th>
+                      <th>Anh</th>
+                      <th>IT</th>
+                      <th>DS</th>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <th>Barry</th>
+                      <th>Allen</th>
+                      <th>BA</th>
+                      <th>FN</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Nguyễn Văn</th>
+                      <th>Anh</th>
+                      <th>IT</th>
+                      <th>DS</th>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <th>Barry</th>
+                      <th>Allen</th>
+                      <th>BA</th>
+                      <th>FN</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Nguyễn Văn</th>
+                      <th>Anh</th>
+                      <th>IT</th>
+                      <th>DS</th>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <th>Barry</th>
+                      <th>Allen</th>
+                      <th>BA</th>
+                      <th>FN</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    
+    <div id="root"></div>
+    
+    <script src="../src/index.js"></script>
+  </body>
+</html>
