@@ -8,11 +8,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 //import Layout from './components/Layout';
 
-/*ReactDOM.render(
+ReactDOM.render(
     <HashRouter>
         <Route path="/" component={App}>
         </Route>
     </HashRouter>, 
-    document.getElementById('root'));*/
+    document.getElementById('root'));
 
 serviceWorker.unregister();
