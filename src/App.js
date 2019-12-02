@@ -1,15 +1,20 @@
 import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
+import { Router } from 'react-router-dom';
 
-import Layout from './components/Layout'
+import Header from "./assets/components/header";
 
-function App() {
-  return (
-    <div>
-      <Layout />
-    </div>
-  );
+import AppRouter from './assets/components/appRouter';
+
+
+export default class App extends React.Component {
+  render() {
+      return (
+        <Router>
+          <div>
+            <Header />
+            <AppRouter />
+          </div>
+        </Router>
+      );
+  }
 }
-
-export default App;
